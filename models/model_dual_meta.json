@@ -1,0 +1,76 @@
+{
+  "mode": "dual",
+  "targets": [
+    "PM2_5",
+    "PM10"
+  ],
+  "log_transform": true,
+  "feature_cols": [
+    "Temperature",
+    "Humidity",
+    "WindSpeed",
+    "CO",
+    "NO",
+    "NO2",
+    "O3",
+    "SO2",
+    "NH3",
+    "hour_sin",
+    "hour_cos",
+    "month_sin",
+    "month_cos",
+    "dow_sin",
+    "dow_cos",
+    "day_of_year",
+    "is_weekend",
+    "is_winter",
+    "is_monsoon",
+    "is_peak_hour",
+    "is_festival",
+    "PM2_5_lag1h",
+    "PM2_5_lag3h",
+    "PM2_5_lag6h",
+    "PM2_5_lag12h",
+    "PM2_5_lag24h",
+    "PM2_5_lag48h",
+    "PM2_5_roll6h_mean",
+    "PM2_5_roll6h_std",
+    "PM2_5_roll12h_mean",
+    "PM2_5_roll12h_std",
+    "PM2_5_roll24h_mean",
+    "PM2_5_roll24h_std",
+    "PM10_lag1h",
+    "PM10_lag3h",
+    "PM10_lag6h",
+    "PM10_lag12h",
+    "PM10_lag24h",
+    "PM10_lag48h",
+    "PM10_roll6h_mean",
+    "PM10_roll6h_std",
+    "PM10_roll12h_mean",
+    "PM10_roll12h_std",
+    "PM10_roll24h_mean",
+    "PM10_roll24h_std"
+  ],
+  "metrics": {
+    "PM2_5": {
+      "rmse": 17.060549900045107,
+      "mae": 10.425539104517338,
+      "r2": 0.9460910841361253,
+      "best_iteration": 103
+    },
+    "PM10": {
+      "rmse": 18.31029713419039,
+      "mae": 10.913048810255692,
+      "r2": 0.9463236834366616,
+      "best_iteration": 149
+    }
+  },
+  "training_cutoff": "2023-01-01",
+  "trained_at": "2026-06-04T11:54:46.103444",
+  "rows_used": 26036,
+  "data_range": {
+    "start": "2023-01-01",
+    "end": "2026-06-03"
+  }
+}
